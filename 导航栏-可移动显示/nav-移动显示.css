@@ -1,0 +1,43 @@
+.total {
+    margin: 20px auto;
+    position: relative;
+}
+
+.total .menu {
+    display: inline-block;
+    width: 20%;
+}
+
+.total .menu .menu-title {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: url("../img/鼠标悬停背景.jpg");
+    margin-right: 35px;
+}
+
+.total .menu .menu-content {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0px;
+}
+
+.total .menu:hover .menu-title {
+    background-color: yellow;
+}
+
+.total .menu:hover .menu-content {
+    display: inline-block;
+    width: 100%;
+    background-color: orangered;
+}
+
+.total .menu .menu-content .menu-content-1 {
+    display: inline-block;
+    width: 15%;
+    margin-right: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}

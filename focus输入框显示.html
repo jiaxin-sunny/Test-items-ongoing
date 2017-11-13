@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>focus输入框显示</title>
+    <style type="text/css">
+        body {
+            margin: 20px auto;
+            width: 500px;
+            height: auto;
+            font-size: 13px;
+            font-family: Arial;
+        }
+
+        label {
+            margin-left: 10px;
+            width: 30px;
+        }
+
+        #oldPassWorld, #newPassWorld, #reinput {
+            border-bottom: 1px dotted grey;
+            background-color: orange;
+            margin-bottom: 3px;
+            padding: 5px 0px;
+        }
+
+        span {
+            display: none;
+        }
+
+        #oldPassWorld:hover span, #newPassWorld:hover span, #reinput:hover span {
+            display: inline;
+        }
+
+        #oldPassWorld:hover, #newPassWorld:hover, #reinput:hover {
+            background-color: papayawhip;
+        }
+    </style>
+</head>
+<body>
+<div id="oldPassWorld">
+    <label for="oldPW">原始密码:</label>
+    <input type="text" id="oldPW" name="passworldold">
+</div>
+<div id="newPassWorld">
+    <label for="newPW">新的密码:</label>
+    <input type="text" id="newPW" name="passworldnew">
+    <span>（密码长度为6-20，不想修改请填空）</span>
+</div>
+<div id="reinput">
+    <label for="twice">重复密码:</label>
+    <input type="text" id="twice" name="reinputtwice">
+    <span>（确认以上输入密码）</span>
+</div>
+</body>
+</html>

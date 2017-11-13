@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>滚动条</title>
+    <style type="text/css">
+        ul {
+            background-color: orange;
+            width: 330px;
+            height: 22px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        ul li {
+            height: 22px;
+        }
+    </style>
+</head>
+<body>
+<ul id="scorll">
+    <li>div+css向上不断滚动演示</li>
+    <li>css向上不断滚动演示</li>
+    <li>div向上不断滚动演示</li>
+</ul>
+<script type="application/javascript">
+    var oMarquee = document.getElementsBClassName("ul"); //滚动对象
+    var iLineHeight = 22; //单行高度，像素
+    var iLineCount = 3; //实际行数
+    var iScrollAmount = 1; //每次滚动高度，像素
+    function run() {
+        oMarquee.scrollTop += iScrollAmount;
+        if (oMarquee.scrollTop == iLineCount * iLineHeight)
+            oMarquee.scrollTop = 0;
+        if (oMarquee.scrollTop % iLineHeight == 0) {
+            window.setTimeout("run()", 1000);
+        } else {
+            window.setTimeout("run()", 10);
+        }
+    }
+
+    oMarquee.innerHTML += oMarquee.innerHTML;
+    window.setTimeout("run()", 1000);
+</script>
+</body>
+</html>

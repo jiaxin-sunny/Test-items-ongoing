@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>table插件</title>
+		<script src="jquery.js"></script>
+        <script src="table-插件-table-jQuery.js"></script>
+        <script type="application/javascript">
+            $(function () {
+                $("#table").table({
+                    caption: "table one",
+                    rowMudle: [{
+                        code: "name",
+                        title: "xingming"
+                    },{
+                        code: "age",
+                        title: "nianling"
+                    },{
+                        code: "address",
+                        title: "dizhi"
+                    }],
+                    rowBody: [{
+                        name: "jiaixn",
+                        age: 16,
+                        address: "heilongjiang"
+                    },{
+                        name: "xiaohua",
+                        age: 22,
+                        address: "hebei"
+                    }]
+                })
+            })
+        </script>
+	</head>
+	<body>
+		<div id="table"></div>
+        <table>
+            <caption>table example</caption>
+            <tr>
+                <th>xingming</th>
+                <th>nainling</th>
+                <th>dizhi</th>
+            </tr>
+            <tr>
+                <td>jiaxin</td>
+                <td>16</td>
+                <td>asdzxc</td>
+            </tr>
+            <tr>
+                <td>xiaohua</td>
+                <td>22</td>
+                <td>qwerty</td>
+            </tr>
+        </table>
+	</body>
+</html>

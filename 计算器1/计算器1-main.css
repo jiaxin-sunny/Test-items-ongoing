@@ -1,0 +1,13 @@
+table {
+    border: blue solid 1px;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+td {
+    border: deepskyblue solid 1px;
+}
+
+#t {
+    text-align: right;
+}

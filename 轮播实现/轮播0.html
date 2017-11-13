@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <link href="轮播.css" rel="stylesheet" type="text/css"/>
+    <title>轮播效果图</title>
+</head>
+<body>
+<div id="scroll">
+    <p class="subl">上一张</p>
+    <p class="subr">下一张</p>
+    <ul>
+        <li style="display: block;"><img src="img/冷饮/u=1114891285,3792998457&fm=26&gp=0.jpg" width="180px"
+                                         height="180px"/></li>
+        <li><img src="img/2.jpg" width="180px" height="180px"/></li>
+        <li><img src="img/00.jpg" width="180px" height="180px"/></li>
+        <li><img src="img/1.jpg" width="180px" height="180px"/></li>
+    </ul>
+</div>
+<script>
+    $(function () {
+        var i = 0;
+        var len = $("#scroll ul li").length - 1;
+        $(".subl").click(function () {
+            if (i == len) {
+                i = -1
+            }
+            i++;
+            $("#scroll ul li").eq(i).fadeIn().siblings().hide();
+        })
+        $(".subr").click(function () {
+            if (i == 0) {
+                i = len + 1;
+            }
+            i--;
+            $("#scroll ul li").eq(i).fadeIn().siblings().hide();
+        })
+    })
+</script>
+</body>
+</html>

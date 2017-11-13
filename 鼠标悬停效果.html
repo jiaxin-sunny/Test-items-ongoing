@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标悬停效果</title>
+    <style type="text/css">
+        #img {
+            width: 500px;
+            height: 300px;
+            background: url("img/鼠标悬停背景.jpg");
+            position: relative;
+            margin: 0 auto;
+        }
+
+        #img:hover {
+            cursor: pointer
+        }
+
+        #img a {
+            text-decoration: none;
+            display: none;
+        }
+
+        #img:hover a {
+            display: block; /**none与block相对应**/
+            position: absolute;
+            bottom: 0px;
+            text-align: center;
+            width: 500px;
+            color: red;
+            font-weight: bold;
+            height: 36px;
+            line-height: 36px;
+            background: #000;
+            opacity: 0.5;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+<div id="img">
+    <a href="#">欢迎访问"鼠标悬停效果例子"</a>
+</div>
+</body>
+</html>

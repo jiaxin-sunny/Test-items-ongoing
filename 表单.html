@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <style type="text/css">
+        label {
+            float: left;
+            width: 80px;
+            line-height: 25px
+        }
+
+        input {
+            width: 180px;
+            border: 1px solid red;
+        }
+
+        textarea {
+            width: 250px;
+            height: 180px;
+        }
+
+        #btn {
+            margin-left: 80px;;
+            margin-top: 10px;
+            width: 60px;
+            background-color: pink;
+            padding: 5px 0 5px 0;
+            font-weight: bold;
+        }
+
+        br {
+            clear: left;
+        }
+
+        /*表示该元素左边不存在浮动元素*/
+    </style>
+</head>
+<body>
+<form method="post" action="#">
+    <label for="user">姓名</label>
+    <input type="text" name="user" id="user" placeholder=" name"><br>
+    <label for="email">邮件</label>
+    <input type="text" name="email" id="email" placeholder=" email"><br>
+    <label for="notes">备注</label>
+    <textarea id="notes"></textarea><br>
+    <input type="submit" name="确定" id="btn">
+</form>
+</body>
+</html>

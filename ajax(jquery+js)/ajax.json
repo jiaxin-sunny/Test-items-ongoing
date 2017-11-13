@@ -1,0 +1,5 @@
+{
+  "module": "zhangjx",
+  "target": "es5",
+  "sourceMap": true
+}

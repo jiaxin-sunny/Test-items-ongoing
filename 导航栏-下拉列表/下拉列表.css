@@ -1,0 +1,98 @@
+body {
+    text-align: center;
+}
+
+body, ul, li {
+    font-family: Arial;
+    font-size: 16px;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+#nav {
+    width: 600px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 0px 5px;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+}
+
+.menu2 {
+    width: 138px;
+    height: 18px;
+    margin: 6px 4px 0px 0px;
+    background-color: #F5F5F5;
+    color: #999999;
+    border: 1px solid #EEE8DD;
+    padding: 6px 0px 0px 0px;
+    overflow-y: hidden;
+    cursor: pointer;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu1 {
+    width: 138px;
+    height: auto;
+    margin: 6px 4px 0px 0px;
+    border: 1px solid #9CDD75;
+    background-color: #F1FBEC;
+    color: #336601;
+    padding: 6px 0px 0px 0px;
+    cursor: pointer;
+    overflow-y: hidden;
+    filter: Alpha(opacity=70);
+    -moz-opacity: 0.7;
+}
+
+.list {
+    text-align: left;
+    padding: 5px;
+    line-height: 20px;
+}
+
+.list a:link {
+    color: #336601;
+    text-decoration: none;
+    float: left;
+    width: 100px;
+    padding: 3px 5px 0px 5px;
+}
+
+.list a:visited {
+    color: #336601;
+    text-decoration: none;
+    float: left;
+    padding: 3px 5px 0px 5px;
+    width: 100px;
+}
+
+.list a:hover {
+    color: white;
+    float: left;
+    padding: 3px 3px 0px 20px;
+    width: 88px;
+    text-decoration: none;
+    background-color: #539D26;
+}
+
+.list a:active {
+    color: white;
+    float: left;
+    padding: 3px 3px 0px 20px;
+    width: 88px;
+    text-decoration: none;
+    background-color: #BD06B4;
+}
